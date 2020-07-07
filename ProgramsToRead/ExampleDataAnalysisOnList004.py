@@ -33,13 +33,10 @@ while True:
     resposta = str(input('Deseja continuar? [s/n] ')).lower().strip()[0]
     if resposta == 'n':
         break
-print('{:-^40}'.format('Todas as Pessoas'))
-for pessoas in lista_pessoas:
-    print(f'Temos o/a {pessoas[0]} com o peso de {pessoas[1]:.2f}Kg')
+print(f'A quantidade total de pessoas foi de: {quantidade_total_pessoas}')
 print('{:-^40}'.format('MAIS LEVES'))
 for pessoas_leves in mais_leves:
     print(f'Temos a {pessoas_leves[0]} com {pessoas_leves[1]:.2f}Kg')
 print('{:-^40}'.format('MAIS PESADAS'))
 for pessoas_pesadas in mais_pesadas:
     print(f'Temos a {pessoas_pesadas[0]} com {pessoas_pesadas[1]:.2f}Kg')
-print(f'A quantidade total de pessoas foi de: {quantidade_total_pessoas}')
