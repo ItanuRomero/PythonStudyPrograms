@@ -49,16 +49,10 @@ def linha():
 # MainProgram
 limpatela()
 sleep(3)
-comeca = 0
-termina = 10
-razao = 1
-progressao(comeca, termina, razao)
+progressao(0, 10 1)
 sleep(1)
 linha()
-comeca = 10
-termina = 0
-razao = 2
-progressao(comeca, termina, razao)
+progressao(10, 0 2)
 sleep(1)
 linha()
 comeca = int(input('Digite o inicio: '))
