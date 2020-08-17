@@ -8,7 +8,7 @@ def create_menu():
     menu_options()
     create_line()
     opcao_usuario = input_option()
-    process_option_user(opcao_usuario)
+    return opcao_usuario
 
 
 def menu_options():
@@ -25,17 +25,14 @@ def input_option():
         try:
             opcao = int(input('Insira sua opcao: '))
         except ValueError:
-            print('ERRO. Tente novamente apenas com numeros inteiros.')
+            print(insert_cores('vermelho'), 'ERRO. Tente novamente apenas com numeros inteiros.', insert_cores('reset'))
         except KeyboardInterrupt:
-            print('Usuario preferiu nao informar.')
+            print(insert_cores('vermelho'), 'Usuario preferiu nao informar.', insert_cores('reset'))
+            return 3
         except Exception as erro:
-            print(f'Tivemos um problema, segue:\n{erro}')
+            print(insert_cores('vermelho'), f'Tivemos um problema, segue:\n{erro}', insert_cores('reset'))
         else:
             if 0 < opcao < 4:
                 return opcao
             else:
-                print('Digite um valor valido.')
-
-
-def process_option_user(opcao):
-    print(opcao)
+                print(insert_cores('vermelho'), 'Digite um valor valido.', insert_cores('reset'))
