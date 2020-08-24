@@ -1,7 +1,4 @@
-# lista 03
-# achei mais organizado desta forma, prof :)
-# Itanu Romero - 2o. semestre.
-
+# veja o fim da pagina para mais info.
 
 def questao_01():
     """

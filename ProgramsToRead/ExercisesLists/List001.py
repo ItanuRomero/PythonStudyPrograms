@@ -1,5 +1,5 @@
-# Ola professora, resolvi deixar dessa forma para que seja mais organizado!
-# Itanu Romero.
+# veja o fim da pagina para mais info.
+
 
 def questao_1():
     """
