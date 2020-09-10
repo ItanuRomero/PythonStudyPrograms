@@ -1,4 +1,4 @@
-arquivo = open('dado.txt', 'r')
+arquivo = open('dado.txt', 'r+')
 
 nome = arquivo.readline().strip()
 nota1 = arquivo.readline().strip()
